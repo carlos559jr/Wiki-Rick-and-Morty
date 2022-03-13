@@ -1,31 +1,130 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0 ;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header img{
+  width: 100vw;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header h1{
+  padding-top: 1rem ;
+  width: 100vw;
+  position: relative;
+  text-align: center;
+  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.searchbox{
+  text-align: center;
+  margin: 2rem;
+}
+
+.search{
+  text-align: center;
+  padding: 0.1rem 2rem 0.1rem 2rem;
+  border: 0;
+  border-radius: 10px;
+  background-color: #67A97B;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.buton{
+  background:#062226;
+  padding: 0.1rem;
+  color: white;
+  margin-left: 0.5rem;
+}
+
+#location{
+  background-color: #062226;
+  padding: 2rem;
+  text-align: center;
+}
+
+.location-info{
+  background-color: #062226;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+
+.location-info p{
+  padding: 1rem;
+}
+
+.residents{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+.residents h2{
+  padding-top: 1rem;
+}
+.card{
+  padding: 1rem;
+  margin: 1.5rem;
+  background-color: #062226;
+  display: flex;
+  justify-content: space-between;
+}
+
+.info-card{
+  display: flex;
+  flex-direction: column;
+}
+
+.info-card p {
+  padding: 0.1rem 1rem;
+}
+
+.card div img {
+  width: 113px;
+}
+
+
+
+@media only screen and (min-width:769px) {
+
+  .header img{
+    width: 99vw;
+    height: 40vw;
+  }
+
+  .location-info{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .info-card p {
+    padding: 0.1rem 1rem;
+  }
+
+  .info{
+    display: grid;
+    grid-template-columns: repeat(2, 0fr);
+    grid-gap: 1rem;
+  }
+
+  .card div img {
+    width: 10vw;
+  }
+
+  .info-card{
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+  }
 }
 
 @keyframes App-logo-spin {
